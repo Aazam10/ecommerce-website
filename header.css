@@ -66,3 +66,9 @@
 .input-group .input-label {
   font-weight: 600;
 }
+
+@media screen and (max-width: 800px) {
+  .search-container {
+    display: none;
+  }
+}
