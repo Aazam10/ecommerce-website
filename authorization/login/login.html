@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://use.fontawesome.com/35bf05a347.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://footy-ui.netlify.app/css/components.css"
+    />
+    <link rel="stylesheet" href="../../header.css" />
+    <link rel="stylesheet" href="../auth.css" />
+  </head>
+  <body>
+    <header class="ecommerce-header">
+      <div class="ecomm-logo">
+        <a href="#" class="ecomm-logo-link">Footy-Store</a>
+      </div>
+      <div class="search-container">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input
+          type="text"
+          name="search"
+          class="search-bar"
+          placeholder="Search for product"
+          id=""
+        />
+      </div>
+      <nav class="navigation">
+        <button class="btn btn-login">Login</button>
+        <div class="badge-wrapper">
+          <i class="fa fa-heart-o"></i>
+          <div class="badge-number">99+</div>
+        </div>
+        <div class="badge-wrapper">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <div class="badge-number">10</div>
+        </div>
+      </nav>
+    </header>
+    <div class="auth-container">
+      <section class="auth-card">
+        <h2 class="auth-title">Login</h2>
+        <div class="auth-main">
+          <div class="input-group">
+            <label for="username" class="input-label">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="test@gmail.com"
+              class="input"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password" class="input-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="*********"
+              class="input"
+            />
+          </div>
+          <div class="box-link-wrapper">
+            <div class="checkbox">
+              <input id="remember-me" name="remember-me" type="checkbox" />
+              <label for="remember-me">Remember-me</label>
+            </div>
+
+            <div class="forgot-link">
+              <a href="#">Forgot Your Password?</a>
+            </div>
+          </div>
+          <button class="btn btn-primary auth-btn">
+            <a href="#">Login</a>
+          </button>
+          <div class="auth-link-wrapper">
+            <a href="../signup/signup.html" class="create-link"
+              >Create New Account</a
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
