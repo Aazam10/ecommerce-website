@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <script src="https://use.fontawesome.com/35bf05a347.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://footy-ui.netlify.app/css/components.css"
+    />
+    <link rel="stylesheet" href="../../header.css" />
+    <link rel="stylesheet" href="product-list.css" />
+  </head>
+  <body>
+    <div class="nav-header">
+      <header class="ecommerce-header">
+        <div class="ecomm-logo">
+          <a href="#" class="ecomm-logo-link">Footy-Store</a>
+        </div>
+        <div class="search-container">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input
+            type="text"
+            name="search"
+            class="search-bar"
+            placeholder="Search for product"
+            id=""
+          />
+        </div>
+        <nav class="navigation">
+          <button class="btn btn-login">Login</button>
+          <div class="badge-wrapper">
+            <a href="../wishlist/wishlist.html">
+              <i class="fa fa-heart-o"></i>
+              <div class="badge-number">99+</div>
+            </a>
+          </div>
+          <div class="badge-wrapper">
+            <a href="../cart/cart.html">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <div class="badge-number">10</div>
+            </a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- <i class="fa fa-filter filter-icon" aria-hidden="true"></i> -->
+
+    <main class="product-main-container">
+      <aside class="product-filter-container">
+        <div class="filter-header">
+          <h3 class="filter-title">Filter</h3>
+          <p class="filter-reset">Clear</p>
+        </div>
+        <div class="price-range-container">
+          <h3 class="price-title">Price</h3>
+          <div class="slider-container">
+            <div class="price-range">
+              <p>0</p>
+              <p>2500</p>
+              <p>5000</p>
+            </div>
+            <input
+              type="range"
+              name="rangeInput"
+              class="slider"
+              min="0"
+              max="5000"
+            />
+          </div>
+        </div>
+        <div class="category-container">
+          <h3 class="category-title">Category</h3>
+          <div class="checkbox">
+            <label for="checkbox-1">
+              <input id="checkbox-1" name="checkbox" type="checkbox" />Shoes
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkbox-1">
+              <input id="checkbox-1" name="checkbox" type="checkbox" />Topwear
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkbox-1">
+              <input
+                id="checkbox-1"
+                name="checkbox"
+                type="checkbox"
+              />Bottomwear
+            </label>
+          </div>
+        </div>
+        <div class="rating-container">
+          <h3 class="rating-title">Ratings</h3>
+          <div class="radio">
+            <label for="four-star">
+              <input id="four-star" name="rating" type="radio" />4 Stars & Above
+            </label>
+          </div>
+          <div class="radio">
+            <label for="three-star">
+              <input id="three-star" name="rating" type="radio" />3 Stars &
+              Above
+            </label>
+          </div>
+          <div class="radio">
+            <label for="two-star">
+              <input id="two-star" name="rating" type="radio" />2 Stars & Above
+            </label>
+          </div>
+          <div class="radio">
+            <label for="one-star">
+              <input id="one-star" name="rating" type="radio" />1 Stars & Above
+            </label>
+          </div>
+        </div>
+        <div class="sortby-container">
+          <h3 class="sortby-title">Sort By</h3>
+          <div class="radio">
+            <label for="high-to-low">
+              <input id="high-to-low" name="sort" type="radio" />Price- High to
+              Low
+            </label>
+          </div>
+          <div class="radio">
+            <label for="low-to-high">
+              <input id="low-to-high" name="sort" type="radio" />Price- Low to
+              High
+            </label>
+          </div>
+        </div>
+      </aside>
+      <section class="product-list-container">
+        <div class="product-list-title-container">
+          <h2 class="product-list-title">Showing All Products</h2>
+          <p class="product-list-subtitle">(Showing All Products)</p>
+        </div>
+        <div class="product-card-grid">
+          <!-- PRODUCTS -->
+          <div class="card card-shadow">
+            <div class="card-badges">
+              <i class="fa fa-heart card-badge-icon" aria-hidden="true"></i>
+            </div>
+            <div class="card-header">
+              <img
+                class="card-image"
+                src="../assets/vapor14.jpg"
+                alt="card-image"
+              />
+              <div class="card-header-text">
+                <div class="card-title pd-side-05 margin-y-05">
+                  Nike Mercurial Vapor 14 Club TF
+                </div>
+                <div class="card-subtitle pd-side-05">Turf Football Shoe</div>
+              </div>
+            </div>
+            <div class="card-text pd-side-05 margin-y-05 ecom-card-price">
+              <p class="price">Rs. 5000</p>
+              <p class="text-strike gray-text">4995</p>
+              <p class="offer-text">19% off</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-button ecom-card-button">
+                <button class="btn btn-primary ecomm-btn align-center">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="card card-shadow">
+            <div class="card-badges">
+              <i class="fa fa-heart card-badge-icon" aria-hidden="true"></i>
+            </div>
+            <div class="card-header">
+              <img
+                class="card-image"
+                src="../assets/nike-image-2.jpg"
+                alt="card-image"
+              />
+              <div class="card-header-text">
+                <div class="card-title pd-side-05 margin-y-05">
+                  Nike Phantom GT2
+                </div>
+                <div class="card-subtitle pd-side-05">
+                  Multi Ground Football Boot
+                </div>
+              </div>
+            </div>
+            <div class="card-text pd-side-05 margin-y-05 ecom-card-price">
+              <p class="price">Rs. 6,797</p>
+              <p class="text-strike gray-text">Rs. 8495</p>
+              <p class="offer-text">19% off</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-button ecom-card-button">
+                <button class="btn btn-primary ecomm-btn align-center">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="card card-shadow">
+            <div class="card-badges">
+              <i class="fa fa-heart card-badge-icon" aria-hidden="true"></i>
+            </div>
+            <div class="card-header">
+              <img
+                class="card-image"
+                src="../assets/nike-image-3.jpg"
+                alt="card-image"
+              />
+              <div class="card-header-text">
+                <div class="card-title pd-side-05 margin-y-05">
+                  Jordan Series Mid
+                </div>
+                <div class="card-subtitle pd-side-05">Men's Shoes</div>
+              </div>
+            </div>
+            <div class="card-text pd-side-05 margin-y-05 ecom-card-price">
+              <p class="price">Rs. 8595</p>
+              <p class="text-strike gray-text">Rs.6446</p>
+              <p class="offer-text">25% off</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-button ecom-card-button">
+                <button class="btn btn-primary ecomm-btn align-center">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card card-shadow">
+            <div class="card-badges">
+              <i class="fa fa-heart card-badge-icon" aria-hidden="true"></i>
+            </div>
+            <div class="card-header">
+              <img
+                class="card-image"
+                src="../assets/chelsea-tee.jpg"
+                alt="card-image"
+              />
+              <div class="card-header-text">
+                <div class="card-title pd-side-05 margin-y-05">
+                  Chelsea FC Jersey
+                </div>
+                <div class="card-subtitle pd-side-05">Away Football Jersey</div>
+              </div>
+            </div>
+            <div class="card-text pd-side-05 margin-y-05 ecom-card-price">
+              <p class="price">Rs. 5000</p>
+              <p class="text-strike gray-text">4995</p>
+              <p class="offer-text">19% off</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-button ecom-card-button">
+                <button class="btn btn-primary ecomm-btn align-center">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 5 -->
+          <div class="card card-shadow">
+            <div class="card-badges">
+              <i class="fa fa-heart card-badge-icon" aria-hidden="true"></i>
+            </div>
+            <div class="card-header">
+              <img
+                class="card-image"
+                src="../assets/vapor14.jpg"
+                alt="card-image"
+              />
+              <div class="card-header-text">
+                <div class="card-title pd-side-05 margin-y-05">
+                  Nike Mercurial Vapor 14 Club TF
+                </div>
+                <div class="card-subtitle pd-side-05">Turf Football Shoe</div>
+              </div>
+            </div>
+            <div class="card-text pd-side-05 margin-y-05 ecom-card-price">
+              <p class="price">Rs. 5000</p>
+              <p class="text-strike gray-text">4995</p>
+              <p class="offer-text">19% off</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-button ecom-card-button">
+                <button class="btn btn-primary ecomm-btn align-center">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 6 -->
+          <div class="card card-shadow">
+            <div class="card-badges">
+              <i class="fa fa-heart card-badge-icon" aria-hidden="true"></i>
+            </div>
+            <div class="card-header">
+              <img
+                class="card-image"
+                src="../assets/vapor14.jpg"
+                alt="card-image"
+              />
+              <div class="card-header-text">
+                <div class="card-title pd-side-05 margin-y-05">
+                  Nike Mercurial Vapor 14 Club TF
+                </div>
+                <div class="card-subtitle pd-side-05">Turf Football Shoe</div>
+              </div>
+            </div>
+            <div class="card-text pd-side-05 margin-y-05 ecom-card-price">
+              <p class="price">Rs. 5000</p>
+              <p class="text-strike gray-text">4995</p>
+              <p class="offer-text">19% off</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-button ecom-card-button">
+                <button class="btn btn-primary ecomm-btn align-center">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
