@@ -150,3 +150,12 @@
   font-size: 1rem;
   margin: 0.5rem auto;
 }
+
+@media screen and (max-width: 600px) {
+  .trending-cards {
+    grid-template-columns: repeat(auto-fit, 15rem);
+  }
+  .card {
+    width: 15rem;
+  }
+}
