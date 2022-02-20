@@ -94,7 +94,6 @@
   .auth-card {
     width: 60%;
     min-width: max-content;
-    padding: 2rem 0rem;
   }
 }
 
@@ -102,7 +101,6 @@
   .auth-card {
     width: 90%;
     min-width: max-content;
-    padding: 2rem 0rem;
   }
   .box-link-wrapper {
     gap: 1rem;
